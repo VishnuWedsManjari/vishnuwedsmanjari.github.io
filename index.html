@@ -9,7 +9,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vishnu Raj V & Manjari G Menon — Wedding Invitation">
 <meta property="og:description" content="Join us on Sunday, 23rd August 2026, 9:30 AM at The George Hall, Thoppumpady, Kochi. Tap to open the invitation.">
-<meta property="og:image" content="https://vishnuwedsmanjari.github.io/invite-preview .png">
+<meta property="og:image" content="https://vishnuwedsmanjari.github.io/invite-preview.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -165,7 +165,6 @@ section,header,footer{position:relative;}
    SECTION RHYTHM
    ========================================================== */
 main section{padding-top:clamp(52px,8vh,84px);}
-main section:last-of-type{padding-bottom:0;}
 
 /* ==========================================================
    INVITATION MESSAGE
@@ -270,7 +269,7 @@ main section:last-of-type{padding-bottom:0;}
 /* ==========================================================
    BLESSING / FOOTER
    ========================================================== */
-.blessing{padding-bottom:clamp(64px,9vh,96px);}
+.blessing{padding-bottom:clamp(88px,12vh,128px);}
 .blessing .msg{
   font-family:var(--serif);font-style:italic;font-weight:400;
   font-size:clamp(1.4rem,4vw,1.9rem);
@@ -285,8 +284,21 @@ main section:last-of-type{padding-bottom:0;}
 }
 .blessing .fam-line{
   margin-top:26px;
-  font-size:.66rem;letter-spacing:.4em;text-transform:uppercase;text-indent:.4em;
+  font-size:.64rem;letter-spacing:.28em;text-transform:uppercase;text-indent:.28em;
+  line-height:2;
   color:var(--sage);font-weight:300;
+  padding:0 10px;
+}
+
+/* ==========================================================
+   VIEWPORT FRAME — thin gold border like the preview image
+   ========================================================== */
+.frame{
+  position:fixed;
+  inset:clamp(10px,1.8vw,20px);
+  border:1px solid rgba(201,162,75,.55);
+  pointer-events:none;
+  z-index:50;
 }
 
 /* ==========================================================
@@ -303,6 +315,7 @@ main section:last-of-type{padding-bottom:0;}
 </style>
 </head>
 <body>
+<div class="frame" aria-hidden="true"></div>
 
 <!-- ==================== HERO ==================== -->
 <header class="hero">
@@ -328,11 +341,11 @@ main section:last-of-type{padding-bottom:0;}
 <main class="wrap">
 
   <!-- ==================== INVITATION MESSAGE ==================== -->
-  <!-- <section class="message" id="invitation">
+  <section class="message" id="invitation">
     <p class="label reveal">An Invitation</p>
     <div class="hairline reveal"></div>
     <p class="reveal">With the blessings of our families, we joyfully invite you to celebrate the beginning of our new journey together.</p>
-  </section> -->
+  </section>
 
   <!-- ==================== FAMILIES ==================== -->
   <section class="families">
@@ -341,7 +354,7 @@ main section:last-of-type{padding-bottom:0;}
 
     <div class="fam reveal">
       <p class="side-note">Groom's Parents</p>
-      <h3>Mrs.&nbsp;V&nbsp;Mahalakshmi<br>&amp;<br>(Late) Mr.&nbsp;R&nbsp;Venkitesh</h3>
+      <h3>(Late) Mr.&nbsp;R&nbsp;Venkitesh<br>&amp;<br>Mrs.&nbsp;V&nbsp;Mahalakshmi</h3>
       <p>Puthan Purakal House · Palluruthy · Kochi</p>
     </div>
 
@@ -350,7 +363,7 @@ main section:last-of-type{padding-bottom:0;}
     <div class="fam reveal">
       <p class="side-note">Bride's Parents</p>
       <h3>Mr.&nbsp;S&nbsp;Girish<br>&amp;<br>Mrs.&nbsp;K&nbsp;Shailaja</h3>
-      <p>Kazhamathil House · Thaikkattussery · Ollur · Thrissur</p>
+      <p>Kazhamathil House · Thaikkattussery · Thrissur</p>
     </div>
   </section>
 
@@ -387,7 +400,7 @@ main section:last-of-type{padding-bottom:0;}
         Open Maps
       </a>
       <a class="btn btn-line reveal" target="_blank" rel="noopener"
-         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Vishnu+Raj+V.+%26+Manjari+G+Menon&dates=20260823T040000Z/20260823T050000Z&details=Wedding+of+Vishnu+Raj+V.+%26+Manjari+G+Menon.+Ceremony:+9:30+AM+to+10:30+AM&location=The+George+Hall,+Thoppumpady,+Kochi">
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+of+Vishnu+Raj+V+%26+Manjari+G+Menon&dates=20260823T040000Z/20260823T050000Z&details=Wedding+of+Vishnu+Raj+V+%26+Manjari+G+Menon.+Ceremony:+9:30+AM+to+10:30+AM&location=The+George+Hall,+Thoppumpady,+Kochi">
         <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v6M9 16h6"/></svg>
         Add to Calendar
       </a>
